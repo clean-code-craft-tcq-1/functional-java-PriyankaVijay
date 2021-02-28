@@ -41,6 +41,6 @@ public class Battery {
 		return (factor>max) ? "high" : "low"; 
 	}
 	private boolean isFactorOk(float min, float max, float value) {
-		return (value < min || value > max) ? false : true; 
+		return !(value < min || value > max); 
 	}
 }
