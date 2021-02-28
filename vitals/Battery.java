@@ -24,7 +24,7 @@ public class Battery {
 	public boolean isSocOk() {
 		if(!isFactorOk(Constants.SOC_MIN_THRESHOLD, Constants.SOC_MAX_THRESHOLD, soc))
 		{
-			System.out.println("State of charge is out of range and is " + isFactorHigh(Constants.TEMPERATURE_MAX_THRESHOLD , soc) + "!");
+			System.out.println("State of charge is out of range and is " + isFactorHigh(Constants.SOC_MAX_THRESHOLD , soc) + "!");
 			return false;
 		}	
 		return true;
