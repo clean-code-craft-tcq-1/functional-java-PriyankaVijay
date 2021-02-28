@@ -11,7 +11,7 @@ public class Battery {
 		this.chargeRate = chargeRate;
 	}
 	public boolean isBatteryOk() {
-		return (isTemperatureOk() && isSocOk() && isChargeRateOk());
+		return (isTemperatureOk() && isSocOk()) && isChargeRateOk();
 	}
 	public boolean isTemperatureOk() {		
 		if(!isFactorOk(Constants.TEMPERATURE_MIN_THRESHOLD, Constants.TEMPERATURE_MAX_THRESHOLD, temperature))
