@@ -1,6 +1,6 @@
 package vitals;
 
-public class BMS {
+public class Main {
 	static boolean batteryIsOk(float temperature, float soc, float chargeRate) {       
         Battery battery = new Battery(temperature, soc, chargeRate);
         return battery.isBatteryOk();
